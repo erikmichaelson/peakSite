@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html data-aos="animation name" style="background-color: black;">
+<title>Peak Quality Products | Gear from the Wilderness</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://use.typekit.net/lny7yac.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="Plugins/aos/aos.css">
+<link rel="icon" href="Resources/thumbnail.png">
+<style>
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "Bookmania", sans-serif; color:#dcbe9f;/*d6b794*/}
+.w3-sidebar{height:200px;width:160px;position:fixed;z-index:3;background-color:#ffce34;transform:translate(60px, 20px);!important}
+.w3-sidebar a {font-family: "Bookman-jf-pro"}
+.w3-bar-item {padding:8px;padding-left:24px;!important}
+.headlinks, :visited {margin:0px;padding-left:28px;text-decoration: none;!important}
+.headlinks:hover {transform: translateX(10px);}
+.peak-shifted {margin-left:200px;!important}
+.leftTxt {transform: translateX(40px);}
+</style>
+<body class="w3-content" style="max-width:100vw">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top" style="" id="mySidebar">
+  <div class="w3-container w3-display-container" style="padding:10px;">
+    <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-hide-medium w3-button w3-display-topright"></i>
+    <h3 class="w3-wide"><img src="Resources/peaktransparent.png" width="100%"></h3>
+  </div>
+  <div class="w3-medium w3-text-black" style="font-weight:bold">
+    <a href="#story" class="w3-bar-item, headlinks">01. Our Story</a>
+    <a href="#look" class="w3-bar-item, headlinks">02. Our Look</a>
+<!--    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
+      Jeans <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
+      <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+      <a href="#" class="w3-bar-item w3-button">Relaxed</a>
+      <a href="#" class="w3-bar-item w3-button">Bootcut</a>
+      <a href="#" class="w3-bar-item w3-button">Straight</a>
+    </div>
+-->
+    <a href="#products" class="w3-bar-item, headlinks">03. Our Products</a>
+  </div>
+<!--  <a href="#footer" class="w3-bar-item w3-button w3-padding">Contact</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a>
+  <a href="#footer"  class="w3-bar-item w3-button w3-padding">Subscribe</a> -->
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="w3-bar w3-top w3-hide-large w3-xlarge" style="background-color:#ffce34;color:black;">
+  <div class="w3-bar-item w3-padding-16 w3-wide"><img src="Resources/peaktransparent.png" height="50px"></div>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-plus"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="search()"><i class="fa fa-search"></i></a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="bag()"><i class="fa fa-shopping-bag"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main">
+
+  <!-- Push down content on small screens -->
+  <div class="w3-hide-large" style="margin-top:83px"></div>
+
+  <!-- Top header -->
+  <header class="w3-container w3-xlarge w3-hide-small w3-hide-medium" style="position:fixed;top:0px;right:0px;z-index:3;color:white;">
+    <p class="w3-left"></p>
+    <p class="w3-right" style="margin-right:20px;">
+      <i class="fa fa-shopping-bag w3-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="w3-display-container w3-container"  style="margin:0px; padding:0px; !important">
+    <img src="Resources/foggyBW_Edit1.jpg" alt="boundaries" style="width:100%;  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));">
+    <div class="w3-display-topleft" style="padding:24px 48px; color: black; !important">
+      <h1 class="w3-jumbo w3-hide-small peak-shifted" style="color:black;">Welcome to the Wilderness</h1>
+      <h1 class="w3-hide-large w3-hide-medium"style="color:black;">Welcome to the Wilderness</h1>
+      <h1 class="w3-hide-small peak-shifted"style="color:black;">GET PREPARED</h1>
+      <p><a href="#products" class="w3-button w3-black w3-padding-large w3-large peak-shifted w3-hide-small w3-hide-medium">SHOP NOW</a></p>
+      <p><a href="#products" class="w3-button w3-black w3-padding-large w3-large w3-hide-large">SHOP NOW</a></p>
+      <img src="Resources/peakDownArrow.png" class="w3-center"style="position:absolute;top:80vh;transform:scale(.5,.5);color:#dcbe9f;">
+<!--      <div class="peak-shifted" style="height:50px;">
+        <h2 style="position:sticky;top:0;"><span><a href="#story">01. Our Story</a></span><span><a href="#look">02. Our Look</a></span><span><a href="#products">03. Our Products</a></span></h2>
+      </div>    -->
+  </div>
+
+  <!-- Our Story Section -->
+  <div class="w3-row w3-padding-64" id="story"><a name="story">
+
+    <!-- Mobile 1st Pic -->
+    <div class="m6 w3-padding-large w3-hide-large w3-hide-medium">
+      <img src="Resources/woolSweaterRowing.jpg" class="w3-round w3-image w3-opacity-min" alt="Peak outdoor gear in action" width="600" height="750">
+    </div>
+
+    <!-- Story Text -->
+    <div class="w3-col m5 w3-padding-large">
+      <h1 class="w3-left">01. Our Story</h1><br>
+      <h5 class="w3-center">Tradition since 1889</h5>
+      <p class="w3-large leftTxt">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
+      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+
+    <!-- Large 1st Pic -->
+    <div class="w3-col m7 w3-padding-large w3-hide-small">
+     <img src="Resources/woolSweaterRowing.jpg" class="w3-round w3-image w3-opacity-min" alt="Peak outdoor gear in action" width="600" height="750">
+    </div>
+  </div>
+
+
+  <!-- Our Look Section Large Screens-->
+  <div class="w3-row w3-padding-64 w3-hide-small w3-hide-medium" id="look" style="height:4000px;"><a name="look">
+    <div data-aos="zoom-out" style="padding-bottom:400px;">
+      <img src="Resources/boundaryPH2.jpg" style="width:55vw;height:auto;">
+    </div>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w3-right" style="padding-bottom:350px;">
+      <img src="Resources/boundaryPH3.jpg" style="height:100vh;width:auto;">
+    </div>
+    <div data-aos="fade-out-down" data-aos-anchor-placement="top-center" style="padding-bottom:350px;transform:translateX(20vw)">
+      <img src="Resources/makingFirePH_Edit1.jpg" style="width:60vw;height:auto;">
+    </div>
+    <div data-aos="fade-right" style="padding-left:50px;height:250px;">
+      <img src="Resources/splitRock.jpg" style="height:100%;width:auto;">
+    </div>
+    <div data-aos="fade-left" style="padding-left:50px;height:250px;">
+      <img src="Resources/boundaryPH1.jpeg" style="height:100%;width:auto;float:right;margin-right:80px;">
+    </div>
+  </div>
+
+  <!-- Our Look Section Mobile -->
+  <div class="w3-row w3-padding-64 w3-hide-large" id="look" style="height:4000px;"><a name="look">
+    <div data-aos="zoom-out" style="padding-bottom:400px;">
+      <img src="Resources/boundaryPH2.jpg" style="width:100vw;height:auto;">
+    </div>
+    <div data-aos="fade-up" data-aos-anchor-placement="center-bottom" class="w3-right" style="padding-bottom:350px;">
+      <img src="Resources/boundaryPH3.jpg" style="width:100vw;height:auto;">
+    </div>
+    <div data-aos="fade-out-down" data-aos-anchor-placement="top-center" style="padding-bottom:350px;">
+      <img src="Resources/makingFirePH_Edit1.jpg" style="width:100vw;height:auto;">
+    </div>
+    <div data-aos="fade-right" style="height:250px;">
+      <img src="Resources/splitRock.jpg" style="width:100vw;height:auto;">
+    </div>
+    <div data-aos="fade-left" style="height:250px;">
+      <img src="Resources/boundaryPH1.jpeg" style="width:100vw;height:auto;">
+    </div>
+  </div>
+
+
+  <!-- Product grid
+  <div class="w3-row w3-grayscale">
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans2.jpg" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans2.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">New</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+      <div class="w3-container">
+        <div class="w3-display-container">
+          <img src="/w3images/jeans4.jpg" style="width:100%">
+          <span class="w3-tag w3-display-topleft">Sale</span>
+          <div class="w3-display-middle w3-display-hover">
+            <button class="w3-button w3-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b class="w3-text-red">$14.99</b></p>
+      </div>
+    </div>
+
+    <div class="w3-col l3 s6">
+      <div class="w3-container">
+        <img src="/w3images/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+      <div class="w3-container">
+        <img src="/w3images/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div>
+  </div>    -->
+
+  <hr style="height:5px;">
+
+  <div id="my-store-17391540" style="z-index: 1;"></div>
+    <div style="background-color:#dcbe9f;!important">
+      <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?17391540&data_platform=code&data_date=2019-06-09" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-17391540");</script>
+    </div>
+
+  <!-- Subscribe section -->
+  <div class="w3-container w3-black w3-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+  </div>
+
+  <!-- Footer -->
+  <footer class="w3-padding-64 w3-light-grey w3-small w3-center" id="footer">
+    <div class="w3-row-padding">
+      <div class="w3-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="w3-input w3-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="w3-input w3-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="w3-button w3-block w3-black">Send</button>
+        </form>
+      </div>
+
+      <div class="w3-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="w3-col s4 w3-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official w3-hover-opacity w3-large"></i>
+        <i class="fa fa-instagram w3-hover-opacity w3-large"></i>
+        <i class="fa fa-snapchat w3-hover-opacity w3-large"></i>
+        <i class="fa fa-pinterest-p w3-hover-opacity w3-large"></i>
+        <i class="fa fa-twitter w3-hover-opacity w3-large"></i>
+        <i class="fa fa-linkedin w3-hover-opacity w3-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="w3-black w3-center w3-padding-24">Powered by <a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-opacity">w3.css</a></div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="w3-modal">
+  <div class="w3-modal-content w3-animate-zoom" style="padding:32px">
+    <div class="w3-container w3-white w3-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove w3-right w3-button w3-transparent w3-xxlarge"></i>
+      <h2 class="w3-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="w3-button w3-padding-large w3-red w3-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script src="Plugins/aos/aos.js"></script>
+<script>
+// Animate on scroll initialization
+AOS.init();
+// Accordion
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else {
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
