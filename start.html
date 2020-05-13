@@ -4,14 +4,18 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://use.typekit.net/lny7yac.css">
+<link rel="stylesheet" href="https://use.typekit.net/lny7yac.css">  <!-- not Noble -->
+<link rel="stylesheet" href="https://use.typekit.net/fri8bwc.css"> <!-- Noble -->
+
+<link rel="stylesheet" href="styles.css">
+
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Plugins/aos/aos.css">
 <link rel="icon" href="Resources/thumbnail.png">
-<style>
+<!-- <style>
 @font-face { font-family: gotham-bold; src: url("Resources/Gotham-Bold.otf"); }
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "bookman-jf-pro", sans-serif;letter-spacing:-1px;}
-.w3-sidebar{width:160px;height:auto;position:fixed;z-index:3;background-color:#ffce34;transform:translateX(60px);!important}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "nobel", sans-serif; /*letter-spacing:-1px;   */}
+.w3-sidebar{width:120px;height:auto;position:fixed;z-index:3;/*background-color:#ffce34*/ background:transparent;transform:translateX(60px);!important}
 a, .no-u {text-decoration: none;}
 .social {padding-left: 15px;color:white;}
 .no-u:hover{text-decoration: underline;}
@@ -21,12 +25,12 @@ a, .no-u {text-decoration: none;}
 .peak-shifted {margin-left:200px;!important}
 .leftTxt {transform: translateX(40px);}
 .uncyText {font-size:28pt;!important}
-</style>
+</style>  -->
 <body class="w3-content" style="max-width:100vw">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-collapse w3-top" style="" id="mySidebar">
-<div class="w3-container w3-display-container" style="padding:10px;">
+<div class="w3-container w3-display-container" style="padding:4px;">
 <i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-hide-medium w3-button w3-display-topright"></i>
 <a href="#home"><h3 class="w3-wide"><img src="Resources/peaktransparent.png" width="100%"></h3></a>
 </div>
@@ -72,7 +76,15 @@ a, .no-u {text-decoration: none;}
 </p>
 </header>
 
-<!-- Image header -->
+<link type="text/css" href="styles.css">
+<div class="splashparent">
+  <div class="splashpic">
+    <img src="Peak-Non-Split.png" alt="Background image">
+  </div>
+</div>
+
+
+<!-- Image header 
 <div class="w3-display-container w3-container"  style="margin:20px;margin-top:0px; padding:0px; !important">
 <img src="Resources/smileyBoy.jpg" alt="boundaries" style="width:100%">
 <div class="w3-display-topleft w3-text-white" style="padding-top:9px;padding-bottom:24px; padding-left:48px;">
@@ -86,15 +98,15 @@ a, .no-u {text-decoration: none;}
   <img class="w3-hide-small"style="width:90%;position:relative;left:5%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
   <img class="w3-hide-large w3-hide-medium" style="width:100%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
 
-  <!-- Our Story Section -->
+  <!-- Our Story Section
   <div class="w3-row w3-padding-64" id="story"><a name="story" class="anchor" id="top"></a>
 
-    <!-- Mobile 1st Pic -->
+    <!-- Mobile 1st Pic 
     <div class="m6 w3-padding-large w3-hide-large w3-hide-medium">
       <img src="Resources/woolSweaterRowing.jpg" class="w3-round w3-image w3-opacity-min" alt="Peak outdoor gear in action" width="600" height="750">
     </div>
 
-    <!-- Story Text -->
+    <!-- Story Text
     <div class="w3-col m5 w3-padding-large">
       <h1 class="w3-left">01. Our Story</h1><br>
       <h5 class="w3-center">Tradition since 1889</h5>
@@ -102,7 +114,7 @@ a, .no-u {text-decoration: none;}
       <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
 
-    <!-- Large 1st Pic -->
+    <!-- Large 1st Pic
     <div class="w3-col m7 w3-padding-large w3-hide-small">
      <img src="Resources/woolSweaterRowing.jpg" class="w3-round w3-image w3-opacity-min" alt="Peak outdoor gear in action" width="600" height="750">
     </div>
@@ -111,7 +123,7 @@ a, .no-u {text-decoration: none;}
   <img class="w3-hide-small"style="width:90%;position:relative;left:5%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
   <img class="w3-hide-large w3-hide-medium" style="width:100%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
 
-  <!-- Our Look Section -->
+  <!-- Our Look Section
 <a name="look"class="anchor" id="top"></a>
   <div class="w3-row w3-padding-64" id="look">
     <h1 class="w3-left w3-container">02. Our Look</h1>
@@ -135,7 +147,7 @@ a, .no-u {text-decoration: none;}
       </div>
     </div>
 
-    <!-- Mobile Our Look -->
+    <!-- Mobile Our Look 
     <div class="w3-padding-64 w3-hide-large" id="look" style=""><a name="look"class="anchor" id="top">
       <div data-aos="zoom-out" style="padding-bottom:400px;">
         <img src="Resources/boundaryPH2.jpg" style="width:100%;height:auto;">
@@ -157,6 +169,10 @@ a, .no-u {text-decoration: none;}
 
     <img class="w3-hide-small"style="width:90%;position:relative;left:5%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
     <img class="w3-hide-large w3-hide-medium" style="width:100%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
+  -->
+
+
+
 
     <!-- Our Gear -->
     <a name="gear" height="10px"class="anchor" id="top"></a>
