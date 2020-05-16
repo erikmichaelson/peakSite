@@ -12,45 +12,25 @@
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <link rel="stylesheet" href="Plugins/aos/aos.css">
 <link rel="icon" href="Resources/thumbnail.png">
-<!-- <style>
-@font-face { font-family: gotham-bold; src: url("Resources/Gotham-Bold.otf"); }
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "nobel", sans-serif; /*letter-spacing:-1px;   */}
-.w3-sidebar{width:120px;height:auto;position:fixed;z-index:3;/*background-color:#ffce34*/ background:transparent;transform:translateX(60px);!important}
-a, .no-u {text-decoration: none;}
-.social {padding-left: 15px;color:white;}
-.no-u:hover{text-decoration: underline;}
-.w3-bar-item {padding:8px;padding-left:24px;!important}
-.headlinks, :visited {margin:0px;padding-left:28px;text-decoration:none;font-size:10pt;!important}
-.headlinks:hover {text-decoration: underline;}
-.peak-shifted {margin-left:200px;!important}
-.leftTxt {transform: translateX(40px);}
-.uncyText {font-size:28pt;!important}
-</style>  -->
 <body class="w3-content" style="max-width:100vw">
 
 <!-- Sidebar/menu -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-top" style="" id="mySidebar">
-<div class="w3-container w3-display-container" style="padding:4px;">
-<i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-hide-medium w3-button w3-display-topright"></i>
-<a href="#home"><h3 class="w3-wide"><img src="Resources/peaktransparent.png" width="100%"></h3></a>
-</div>
-<!--    <a onclick="myAccFunc()" href="javascript:void(0)" class="w3-button w3-block w3-white w3-left-align" id="myBtn">
-  Jeans <i class="fa fa-caret-down"></i>
-</a>
-<div id="demoAcc" class="w3-bar-block w3-hide w3-padding-large w3-medium">
-  <a href="#" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
-  <a href="#" class="w3-bar-item w3-button">Relaxed</a>
-  <a href="#" class="w3-bar-item w3-button">Bootcut</a>
-  <a href="#" class="w3-bar-item w3-button">Straight</a>
-</div>
--->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-top mobile-nav" id="mobileNav">
+  <div class="w3-container w3-display-container" style="padding:4px;">
+    <ul class="w3-hide-large">
+      <li class="mobile-nav-item"><i onclick="w3_close()" class="fa fa-remove w3-hide-large w3-button w3-xlarge"></i></li>
+      <li class="mobile-nav-item"><a href="#home"><h3 class="w3-wide">Home</h3></a></li>
+      <li class="mobile-nav-item"><a href="#story"><h3 class="w3-wide">Story</h3></a></li>
+      <li class="mobile-nav-item"><a href="#gear"><h3 class="w3-wide">Gear</h3></a></li>
+    </ul>
+  </div>
 </nav>
 
 <!-- Top menu on small screens -->
 <header class="w3-bar w3-top w3-hide-large w3-xlarge" style="background-color:#ffce34;">
 <div class="w3-bar-item w3-padding-16 w3-wide"><img src="Resources/peaktransparent.png" height="50px"></div>
 <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="w3_open()"><i class="fa fa-plus"></i></a>
-<a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="search()"><i class="fa fa-search"></i></a>
+<!-- <a href="javascript:void(0)" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="search()"><i class="fa fa-search"></i></a>  -->
 <a href="#!/~/cart" class="w3-bar-item w3-button w3-padding-24 w3-right" onclick="bag()"><i class="fa fa-shopping-bag"></i></a>
 </header>
 
@@ -67,16 +47,16 @@ a, .no-u {text-decoration: none;}
 <!-- Top header -->
 <header class="w3-container w3-xlarge w3-hide-small w3-hide-medium" style="position:sticky;top:0px;right:0px;z-index:2;background-color:white;">
 <p class="w3-left peak-shifted" style="padding-left:30px;">
-  <a href="#story" class="w3-bar-item no-u" style="padding-left:50px;">01. Our Story</a>
-  <a href="#look" class="w3-bar-item no-u" style="padding-left:50px;">02. Our Look</a>
-  <a href="#gear" class="w3-bar-item no-u" style="padding-left:50px;">03. Our Gear</a></p>
+  <a href="#story" class="w3-bar-item no-u" style="padding-left:50px;">Story</a>
+  <!--  <a href="#look" class="w3-bar-item no-u" style="padding-left:50px;">Look</a> -->
+  <a href="#gear" class="w3-bar-item no-u" style="padding-left:50px;">Gear</a></p>
 <p class="w3-right" style="margin-right:20px;">
   <a href="#!/~/cart"><i class="fa fa-shopping-bag w3-margin-right"></i></a>
-  <i class="fa fa-search"></i>
+  <!--  <i class="fa fa-search"></i> -->
 </p>
 </header>
 
-<link type="text/css" href="styles.css">
+<!-- <link type="text/css" href="styles.css"> -->
 <div class="splashparent">
   <div class="splashpic">
     <img src="Peak-Non-Split.png" alt="Background image">
@@ -84,7 +64,7 @@ a, .no-u {text-decoration: none;}
 </div>
 
 
-<!-- Image header 
+<!-- Image header
 <div class="w3-display-container w3-container"  style="margin:20px;margin-top:0px; padding:0px; !important">
 <img src="Resources/smileyBoy.jpg" alt="boundaries" style="width:100%">
 <div class="w3-display-topleft w3-text-white" style="padding-top:9px;padding-bottom:24px; padding-left:48px;">
@@ -98,25 +78,29 @@ a, .no-u {text-decoration: none;}
   <img class="w3-hide-small"style="width:90%;position:relative;left:5%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
   <img class="w3-hide-large w3-hide-medium" style="width:100%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
 
-  <!-- Our Story Section
-  <div class="w3-row w3-padding-64" id="story"><a name="story" class="anchor" id="top"></a>
+-->
+<img class="w3-hide-small"style="width:90%;position:relative;left:5%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
+<img class="w3-hide-large w3-hide-medium" style="width:100%;padding-top:50px;margin-bottom:50px" src="Resources/peakborder3.png"></img>
 
-    <!-- Mobile 1st Pic 
+  <!-- Our Story Section -->
+  <div class="w3-row w3-padding-32" id="story"><a name="story" class="anchor" id="top"></a>
+
+    <!-- Mobile 1st Pic -->
     <div class="m6 w3-padding-large w3-hide-large w3-hide-medium">
-      <img src="Resources/woolSweaterRowing.jpg" class="w3-round w3-image w3-opacity-min" alt="Peak outdoor gear in action" width="600" height="750">
+      <img src="Resources/DSC_2400.jpg" class="w3-round w3-image" alt="Peak outdoor gear in action" width="600" height="750">
     </div>
 
-    <!-- Story Text
+    <!-- Story Text -->
     <div class="w3-col m5 w3-padding-large">
-      <h1 class="w3-left">01. Our Story</h1><br>
-      <h5 class="w3-center">Tradition since 1889</h5>
-      <p class="w3-large">The Catering was founded in blabla by Mr. Smith in lorem ipsum dolor sit amet, consectetur adipiscing elit consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute iruredolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.We only use <span class="w3-tag w3-light-grey">seasonal</span> ingredients.</p>
-      <p class="w3-large w3-text-grey w3-hide-medium">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod temporincididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <h1 class="w3-left">Story</h1><br>
+      <h5 class="w3-center" style="color:white">We love you <3 </h5>
+      <p class="w3-large">We believe in the Spirit of 6 AM. That is, the unbounded potential each day offers, and the ability of every person to live in it.</p>
+      <p class="w3-large">Peak Quality Products is rooted in individuality, and a mission to inspire every person to get out there. We create products for everyday use that uphold our values of authenticity, functionality, and quality. Our style is timeless and practical; our gear goes from dirt trails to coffee shops, and everywhere in between. </p>
     </div>
 
-    <!-- Large 1st Pic
+    <!-- Large 1st Pic -->
     <div class="w3-col m7 w3-padding-large w3-hide-small">
-     <img src="Resources/woolSweaterRowing.jpg" class="w3-round w3-image w3-opacity-min" alt="Peak outdoor gear in action" width="600" height="750">
+     <img src="Resources/DSC_2400.jpg" class="w3-round w3-image " alt="Peak outdoor gear in action" width="600" height="750">
     </div>
   </div>
 
@@ -126,8 +110,9 @@ a, .no-u {text-decoration: none;}
   <!-- Our Look Section
 <a name="look"class="anchor" id="top"></a>
   <div class="w3-row w3-padding-64" id="look">
-    <h1 class="w3-left w3-container">02. Our Look</h1>
+    <h1 class="w3-left w3-container">Look</h1>
 
+    <!--
     <div class="w3-col w3-padding-64 w3-hide-small w3-hide-medium" id="look" style="height:4000px;"><a name="look">
       <div data-aos="zoom-out" style="padding-bottom:400px;">
         <img src="Resources/boundaryPH2.jpg" style="width:55vw;height:auto;">
@@ -177,11 +162,11 @@ a, .no-u {text-decoration: none;}
     <!-- Our Gear -->
     <a name="gear" height="10px"class="anchor" id="top"></a>
     </div>
-      <h1 class="w3-container" style="margin-bottom:50px;">03. Our Gear</h1>
+      <h1 class="w3-container" style="margin-bottom:50px;">Gear</h1>
 
-      <div id="my-store-17391540" style="z-index: 1;"></div>
+      <div id="my-Gear-17391540" style="z-index: 1;"></div>
         <div class="w3-padding-16" height="300px">
-        <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?17391540&data_platform=code&data_date=2019-06-09" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-store-17391540");</script>
+        <script data-cfasync="false" type="text/javascript" src="https://app.ecwid.com/script.js?17391540&data_platform=code&data_date=2019-06-09" charset="utf-8"></script><script type="text/javascript"> xProductBrowser("categoriesPerRow=3","views=grid(20,3) list(60) table(60)","categoryView=grid","searchView=list","id=my-Gear-17391540");</script>
       </div>
     </div>
 
@@ -197,20 +182,21 @@ a, .no-u {text-decoration: none;}
     <div class="w3-row-padding">
       <div class="w3-col s6">
         <h4>Get in Touch</h4>
-        <i class="fa fa-facebook-official w3-hover-opacity w3-large social"></i>
-        <i class="fa fa-instagram w3-hover-opacity w3-large social"></i>
-        <i class="fa fa-snapchat w3-hover-opacity w3-large social"></i>
-        <i class="fa fa-pinterest-p w3-hover-opacity w3-large social"></i>
-        <i class="fa fa-twitter w3-hover-opacity w3-large social"></i>
-        <i class="fa fa-linkedin w3-hover-opacity w3-large social"></i>
+        <!-- <i class="fa fa-facebook-official w3-hover-opacity w3-large social"></i> -->
+        <a href="https://www.instagram.com/peakqualityproducts"><i class="fa fa-instagram w3-hover-opacity w3-large social"></i></a>
+        <a href="mailto:peakqualityproducts@gmail.com"><i class="fa fa-envelope w3-hover-opacity w3-large social"></i></a>
+        <!-- <i class="fa fa-snapchat w3-hover-opacity w3-large social"></i> -->
+        <!-- <i class="fa fa-pinterest-p w3-hover-opacity w3-large social"></i> -->
+        <!-- <i class="fa fa-twitter w3-hover-opacity w3-large social"></i> -->
+        <!-- <i class="fa fa-linkedin w3-hover-opacity w3-large social"></i> -->
       </div>
 
       <div class="w3-col s6" style="color:#c9c9c9;">
-        <p>©2019 Peak Quality Products</p>
+        <p>©2020 Peak Quality Products</p>
       </div>
 
 <!--      <div class="w3-col s4 w3-justify">
-        <h4>Store</h4>
+        <h4>Gear</h4>
         <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
         <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
         <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
@@ -270,17 +256,14 @@ function myAccFunc() {
   }
 }
 
-// Click on the "Jeans" link on page load to open the accordion for demo purposes
-document.getElementById("myBtn").click();
-
 // Open and close sidebar
 function w3_open() {
-  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("mobileNav").style.display = "block";
   document.getElementById("myOverlay").style.display = "block";
 }
 
 function w3_close() {
-  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("mobileNav").style.display = "none";
   document.getElementById("myOverlay").style.display = "none";
 }
 </script>

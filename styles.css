@@ -1,31 +1,89 @@
 @font-face { font-family: gotham-bold; src: url("Resources/Gotham-Bold.otf"); }
 
-body,h1,h2,h3,h4,h5,h6,.w3-wide {font-family: "nobel", sans-serif; /*letter-spacing:-1px;   */}
+body,h1,h2,h3,h4,h5,h6,.w3-wide {
+  font-family: "nobel", sans-serif;
+}
 
-.w3-sidebar{width:120px;height:auto;position:fixed;z-index:3;/*background-color:#ffce34*/ background:transparent;transform:translateX(60px);!important}
+.w3-sidebar{
+  width:120px;
+  height:auto;
+  position:fixed;
+  z-index:3;
+  /*background-color:#ffce34*/ 
+  background:transparent;
+  transform:translateX(60px) !important;
+}
 
-a, .no-u {text-decoration: none;}
+.mobile-nav{
+  position:fixed;
+  top:0px;
+  right:50px;
+  /*right:0px;*/
+  width:auto;
+  height:auto;
+  background-color: whitesmoke;
+  text-align: right;
+}
 
-.social {padding-left: 15px;color:white;}
+.mobile-nav-item{
+  padding:12px;
+  margin:15px;
+  list-style-type: none;
+}
+
+a, .no-u {
+  text-decoration: none;
+}
+
+.social {
+  padding: 11px;
+  color:white;
+}
 
 .no-u:hover{text-decoration: underline;}
 
-.w3-bar-item {padding:8px;padding-left:24px;!important}
+/* mobile top-bar */
+@media only screen and (max-width: 992px) {
+  .w3-bar-item {
+    padding:12px;
+    /*padding-left:94px !important; */
+  }
+}
 
-.headlinks, :visited {margin:0px;padding-left:28px;text-decoration:none;font-size:10pt;!important}
+/* desktop top-bar */
+@media only screen and (min-width: 991px) {
+  .w3-bar-item {
+    padding:8px;
+    padding-left:94px !important;
+  }
+}
 
-.headlinks:hover {text-decoration: underline;}
+.headlinks, :visited {
+  margin:0px;
+  padding-left:28px;
+  text-decoration:none;
+  font-size:10pt !important;
+}
 
-.peak-shifted {margin-left:200px;!important}
+.headlinks:hover {
+  text-decoration: underline;
+}
 
-.leftTxt {transform: translateX(40px);}
+.peak-shifted {
+  margin-left:200px !important;
+}
 
-.uncyText {font-size:28pt;!important}
+.leftTxt {
+  transform: translateX(40px);
+}
+
+.uncyText {
+  font-size:28pt !important;
+}
 
 .splashparent {
   height: 100%;
   margin: 0;
-/*	font: //TODO	*/
 }
 
 .splashpic {
